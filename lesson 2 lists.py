@@ -90,3 +90,40 @@ print( )
 del guest_list[1]
 del guest_list[0]
 print(guest_list)
+
+# organising a list
+
+# sorting in alphabetical order
+cars = ['bmw', 'audi', 'toyota', 'suburu']
+cars.sort()
+print(cars)
+
+# sorting alphabetically in reverse order
+cars.sort(reverse=True)
+print(cars)
+
+# to sort list temporally
+# use sorted
+print(sorted(cars))
+
+# length of list
+print(len(cars))
+
+#try
+locations = ['Hawaii', 'Japan', 'Iceland', 'Jamaica', 'Spain',"Ghana"]
+print(locations)
+print(sorted(locations))
+print(locations)
+locations.reverse()
+print(locations)
+locations.reverse()
+print(locations)
+locations.sort()
+print(locations)
+locations.sort(reverse=True)
+print(locations)
+
+print(len(locations))
+
+
+
