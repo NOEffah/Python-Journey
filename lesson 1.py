@@ -22,4 +22,5 @@ x, y, z = 1, 2, 3
 print(x + y + z)
 
 fav_num = 7
+# Printing favourite number
 print(f"My fav nim is {fav_num}")
