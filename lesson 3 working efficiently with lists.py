@@ -6,7 +6,7 @@ for magician in magicians:
 
 print("Thank you everyone that was a great show.\n")
 
-pizzas = ['pepparoni', 'meat', 'fish']
+pizzas = ['pepperoni', 'meat', 'fish']
 for pizza in pizzas:
     print(f"I like {pizza.title()}  pizza")
 print("I really love pizza\n")
@@ -65,4 +65,56 @@ print(cubs)
 cubed = [cube ** 3 for cube in range(1, 11)]
 print(cubed)
 
+# working with part of a list (slice)
+players = ['charles', 'martina', 'micheal', 'florence', 'eli']
+for player in players[:3]:
+    print(player.title())
 
+my_foods = ['pizza', 'kokonte', 'carrot cake']
+friend_foods = my_foods[:]  # if you did friend_foods = my_foods without the slicing both variables will share elements
+my_foods.append('ice cream')
+friend_foods.append('fufu')
+
+print('My favourite foods are:')
+print(my_foods)
+print('\nMy friends favourite foods are:')
+print(friend_foods)
+
+animals = ['dog', 'cat', 'bird', 'mouse', 'horse']
+print('The first three items of the list are:')
+for a in animals[:3]:
+    print(a.title())
+
+print('\nThree items from the middle of the list are:')
+for b in animals[1:4]:
+    print(b.title())
+
+print('\nThree last three items from the list are:')
+for c in animals[2:]:
+    print(c.title())
+
+pizza = ['pepperoni', 'cheese', 'margarita']
+friend_pizza = pizza[:]
+
+pizza.append('french')
+friend_pizza.append('hawaiian')
+
+print('\nPizza items:')
+for d in pizza:
+    print(d)
+
+print('\nFriend Pizza items:')
+for e in friend_pizza:
+    print(e)
+
+# TUPLES - used when elements are not to be changed
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+
+for dimension in dimensions:  # you can iterate through tuples though
+    print(dimension)
+
+fuds = ('pizza', 'burger', 'pasta', 'rice', 'bread')
+for f in fuds:
+    print(f)
