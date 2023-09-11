@@ -160,4 +160,3 @@ for key, value in responses.items():
     print(key.title())
     print(value)
     print("\n")
-
